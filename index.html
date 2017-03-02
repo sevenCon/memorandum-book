@@ -3,14 +3,15 @@
 <head>
 	<title>My calender</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div ms-controller="classAnalysis">
+	<div class="container">
+		<h1 class="calender-header">我的备忘录</h1>
 		<div class="anay-class-calender">
-			<div id="date-top-bar" class="calender-yy-mm-oper">
+			<div id="date-top-bar"  onselectstart="return false;" class="calender-yy-mm-oper">
 				<i class="last-month" onclick="Calender.initLastMonth()"></i>
-				<span class="yy-mm-text">
+				<span class="yy-mm-text" onselectstart="return false;">
 					
 				</span>
 				<i class="next-month" onclick="Calender.initNextMonth()"></i>
@@ -27,14 +28,13 @@
 						<th>星期六</th>
 					</tr>
 				</thead>
-				<tbody>
-					
+				<tbody class="">
 				</tbody>
 			</table>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="calender.js"></script>
+	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="js/calender.js"></script>
 </body>
 </html>
