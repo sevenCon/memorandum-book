@@ -1,0 +1,40 @@
+.beaufy{
+	background-image: url(../img/banner/banner1.jpg);
+    height: 100%;
+    overflow: hidden;
+}
+@media screen and (max-width: 1440px){
+	.beauty {
+	    height: 806.81837px; 
+	}
+}
+
+@media screen and (max-width: 1600px)
+	.beauty {
+	    height: 831.41575px; 
+	}
+}
+@media screen and (max-width: 1920px)
+	.beauty {
+	    height: 880.6105px;
+	}
+}
+
+.slider-response {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1440px)
+.slider-response {
+     background-size: 2112px; 
+}
+@media screen and (max-width: 1600px)
+.slider-response {
+     background-size: 2176px; 
+}	
+
+@media screen and (max-width: 1920px)
+.slider-response {
+    background-size: 2304px;
+}
