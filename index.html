@@ -36,5 +36,18 @@
 
 	<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="js/calender.js"></script>
+	<script type="text/javascript">
+		var remindEvents = [
+            {
+                time:"2017-3-2",
+                eventName:["07:30, 高三二班早读"]
+            },{
+                time:"2017-3-2",
+                eventName:["10:30, 高三二班考试"]
+            }
+        ];
+		var cld = new Calender("#date-top-bar","#calender",remindEvents);
+
+	</script>
 </body>
 </html>

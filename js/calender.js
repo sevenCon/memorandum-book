@@ -1,19 +1,9 @@
 (function(window){
-
-    var remindEvents = [
-            {
-                time:"2017-3-2",
-                eventName:["07:30, 高三二班早读"]
-            },{
-                time:"2017-3-2",
-                eventName:["10:30, 高三二班考试"]
-            }
-        ];
-
     var Calender = function(dateHeaderSelector, selector){
         this.dateHeaderSelector = dateHeaderSelector;
         this.selector = selector;
-
+        this.remindEvents = remindEvents;
+        
         this.changeMonthData(0); // 设月份默认当月
         this.initialMonthDate(); // 初始化天数
         this.serilizeHTML(); // 格式化表格
@@ -27,7 +17,7 @@
 
     Calender.prototype.serilizeHTML = function(){
         var data = Calender.monthDate,
-            events = remindEvents,
+            events = this.remindEvents,
             dateHeaderSelector = this.dateHeaderSelector,
             selector = this.selector,
             _root = $(selector);
@@ -230,6 +220,5 @@ function group(arr, num){
     window.Calender = Calender;
 })(window||{});
 
-var cld = new Calender("#date-top-bar","#calender");
 
 
